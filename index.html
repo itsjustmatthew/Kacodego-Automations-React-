@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+    <script type="module" defer>
+  import Chatbot from "https://cdn.n8nchatui.com/v1/embed.js";
+  Chatbot.init({
+    "n8nChatUrl": "https://hog-full-bison.ngrok-free.app/webhook/fbc84f93-c26e-49b4-bc91-27bf4f0a05d9/chat",
+    "metadata": {}, // Include any custom data to send with each message to your n8n workflow
+    "theme": {
+      "button": {
+        "backgroundColor": "#b8eaff",
+        "right": 16,
+        "bottom": 25,
+        "size": 69,
+        "iconColor": "#373434",
+        "customIconSrc": "https://7ab97e58dc0749490380ced80f43695d.cdn.bubble.io/f1756990404657x661277623800810500/happy.png",
+        "customIconSize": 77,
+        "customIconBorderRadius": 50,
+        "autoWindowOpen": {
+          "autoOpen": false,
+          "openDelay": 2
+        },
+        "borderRadius": "rounded"
+      },
+      "tooltip": {
+        "showTooltip": true,
+        "tooltipMessage": "Hello 👋 if you need any assistance, I'm here to help",
+        "tooltipBackgroundColor": "#fff5f5",
+        "tooltipTextColor": "#1c1c1c",
+        "tooltipFontSize": 12
+      },
+      "chatWindow": {
+        "borderRadiusStyle": "rounded",
+        "avatarBorderRadius": 50,
+        "messageBorderRadius": 6,
+        "showTitle": true,
+        "title": "Kacodego 24/7 Assistant",
+        "titleAvatarSrc": "https://7ab97e58dc0749490380ced80f43695d.cdn.bubble.io/f1756990397699x246260610744600600/chatbot%20%283%29.png",
+        "avatarSize": 38,
+        "welcomeMessage": "Hello! My name is Kiera. How can I help you today?",
+        "errorMessage": "Hmmm🤔, something didn't go as planned, try again.",
+        "backgroundColor": "#333333",
+        "height": 600,
+        "width": 400,
+        "fontSize": 16,
+        "starterPrompts": [
+          "Who are you?",
+          "I'm interested in an automation."
+        ],
+        "starterPromptFontSize": 15,
+        "renderHTML": false,
+        "clearChatOnReload": false,
+        "showScrollbar": false,
+        "botMessage": {
+          "backgroundColor": "#3968f3",
+          "textColor": "#fafafa",
+          "showAvatar": true,
+          "avatarSrc": "https://7ab97e58dc0749490380ced80f43695d.cdn.bubble.io/f1756990404657x661277623800810500/happy.png",
+          "showCopyToClipboardIcon": false
+        },
+        "userMessage": {
+          "backgroundColor": "#eaf7fb",
+          "textColor": "#050505",
+          "showAvatar": true,
+          "avatarSrc": "https://7ab97e58dc0749490380ced80f43695d.cdn.bubble.io/f1756990699763x857187757376911700/user%20%283%29.png"
+        },
+        "textInput": {
+          "placeholder": "Type your query",
+          "backgroundColor": "#ffffff",
+          "textColor": "#1e1e1f",
+          "sendButtonColor": "#0040ff",
+          "maxChars": 50,
+          "maxCharsWarningMessage": "You exceeded the characters limit. Please input less than 50 characters.",
+          "autoFocus": false,
+          "borderRadius": 6,
+          "sendButtonBorderRadius": 32
+        },
+        "uploadsConfig": {
+          "enabled": true,
+          "acceptFileTypes": [
+            "png",
+            "jpeg",
+            "jpg",
+            "pdf"
+          ],
+          "maxSizeInMB": 5,
+          "maxFiles": 1
+        },
+        "voiceInputConfig": {
+          "enabled": true,
+          "maxRecordingTime": 10,
+          "recordingNotSupportedMessage": "To record audio, use modern browsers like Chrome or Firefox that support audio recording"
+        }
+      }
+    }
+    });
+  </script>
+  </body>
+</html>
