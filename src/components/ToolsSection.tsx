@@ -17,14 +17,14 @@ export const ToolsSection = () => {
     logo: 'https://7ab97e58dc0749490380ced80f43695d.cdn.bubble.io/f1757076868470x277840188946848700/PATH_BIG.svg',
     color: 'bg-yellow-500'
   }, {
-    name: 'Make',
-    description: 'Visual platform that lets you design, build, and automate anything',
-    logo: 'https://7ab97e58dc0749490380ced80f43695d.cdn.bubble.io/f1757076607502x693879788538149100/unnamed.webp',
+    name: 'Bubble.io',
+    description: 'Fullstack Visual builder for creating complex mobile applications',
+    logo: 'https://uploads-ssl.webflow.com/624f34ee3b916356b7348b27/624f3840745f81735610d153_Bubble-logo-wordmark-black.svg',
     color: 'bg-purple-500'
   }, {
-    name: 'Zapier',
-    description: 'Connect your apps and automate workflows with easy integrations',
-    logo: 'https://cdn.worldvectorlogo.com/logos/zapier-1.svg',
+    name: 'WeWeb',
+    description: 'frontend low code complex web application builder',
+    logo: 'https://uploads-ssl.webflow.com/629550b514c3a41a5047b83c/629550b514c3a45a5747b84f_weweb-logo-512.png',
     color: 'bg-orange-500'
   }];
   return <section id="tools" className="py-20 relative">

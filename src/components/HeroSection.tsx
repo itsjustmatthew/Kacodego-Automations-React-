@@ -2,6 +2,7 @@ import React from 'react';
 import { ChevronRightIcon, ZapIcon, MousePointerIcon, BarChart3Icon } from 'lucide-react';
 import { ScribbleElement } from './ScribbleElement';
 import './GlassButton.css';
+import Galaxy from './Galaxy';
 
 export const HeroSection = () => {
   return <section className="pt-32 pb-20 md:pt-40 md:pb-28 relative">
@@ -40,9 +41,9 @@ export const HeroSection = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2 relative">
-            <div className="aspect-square max-w-md mx-auto relative">
-              <div className="absolute inset-0 rounded-3xl backdrop-blur-xl bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-gray-700 overflow-hidden">
-                <div className="absolute -inset-1/4 bg-gradient-to-br from-blue-500/20 to-purple-500/20 blur-3xl"></div>
+            <div className="aspect-square max-w-lg mx-auto relative floating-container">
+              <div className="absolute inset-0 rounded-3xl bg-black border border-gray-700 overflow-hidden">
+                <Galaxy />
                 <div className="h-full w-full flex items-center justify-center p-8">
                   <div className="grid grid-cols-2 gap-4 w-full">
                     <div className="backdrop-blur-md bg-white/5 border border-gray-700 rounded-lg p-4 hover:bg-white/10 transition-all">
@@ -77,6 +78,17 @@ export const HeroSection = () => {
       <div className="absolute bottom-1/3 right-0 w-80 h-80 bg-purple-500/20 rounded-full filter blur-3xl"></div>
       {/* Custom styles for the text effect */}
       <style jsx>{`
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
+        }
+        .floating-container {
+          animation: float 4s ease-in-out infinite;
+        }
         .mismatched-text-container {
           display: inline-block;
           position: relative;

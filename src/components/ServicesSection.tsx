@@ -37,17 +37,16 @@ export const ServicesSection = () => {
             </span>
           </h2>
           <ScribbleElement type="underline" position="bottom-right" color="#60A5FA" />
-          <ScribbleElement type="note" text="streamline your workflow!" position="top-right" color="#60A5FA" rotation={-5} />
+          <ScribbleElement type="note" text="streamline your workflow!" position="top-right" color="#60A5FA" rotation={-5} className="md:-translate-y-4" />
           <p className="text-gray-400 max-w-xl mx-auto">
             We provide comprehensive automation solutions to help businesses
             operate more efficiently and effectively.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => <div key={index} className="backdrop-blur-lg bg-white/5 border border-gray-700 rounded-xl p-6 
+          {services.map((service, index) => <div key={index} className={`backdrop-blur-lg bg-white/5 border border-gray-700 rounded-xl p-6 
                 transition-all duration-500 group hover:bg-white/10 
-                hover:border-purple-500/50 hover:shadow-[0_0_15px_rgba(139,92,246,0.3)] 
-                pulse-glow">
+                hover:border-purple-500/50 hover:shadow-[0_0_15px_rgba(139,92,246,0.3)]`}>
               <div className="mb-4 p-3 inline-block backdrop-blur-md bg-white/5 border border-gray-700 rounded-lg 
                 group-hover:bg-white/10 group-hover:border-purple-500/30 transition-all">
                 {service.icon}

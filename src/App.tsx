@@ -124,22 +124,22 @@ export function App() {
           position: relative;
           z-index: 1;
           border-radius: 9999px;
-          border: 2px solid transparent;
+          border: 1px solid transparent;
           background: transparent;
+          animation: rainbowGlow 6s infinite linear;
         }
 
         .rainbow-border-glow::before {
           content: '';
           position: absolute;
           z-index: -2;
-          top: -2px;
-          left: -2px;
-          right: -2px;
-          bottom: -2px;
+          top: -1px;
+          left: -1px;
+          right: -1px;
+          bottom: -1px;
           background: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red);
           border-radius: inherit;
           animation: rainbowBorderGlow 4s linear infinite;
-          filter: blur(8px);
         }
 
         .rainbow-border-glow::after {

@@ -18,3 +18,55 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+
+@keyframes pulse-glow-green {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.8);
+  }
+}
+
+@keyframes pulse-glow-purple {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.8);
+  }
+}
+
+@keyframes pulse-glow-red {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
+  }
+}
+
+@keyframes pulse-glow-yellow {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(255, 255, 0, 0);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 255, 0, 0.8);
+  }
+}
+
+.pulse-glow-green {
+  animation: pulse-glow-green 4s infinite;
+}
+
+.pulse-glow-purple {
+  animation: pulse-glow-purple 4s infinite;
+}
+
+.pulse-glow-red {
+  animation: pulse-glow-red 4s infinite;
+}
+
+.pulse-glow-yellow {
+  animation: pulse-glow-yellow 4s infinite;
+}

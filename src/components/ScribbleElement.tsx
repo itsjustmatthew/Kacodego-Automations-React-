@@ -5,6 +5,7 @@ type ScribbleProps = {
   position: 'top-right' | 'top-left' | 'bottom-right' | 'bottom-left';
   color?: string;
   rotation?: number;
+  className?: string;
 };
 export const ScribbleElement: React.FC<ScribbleProps> = ({
   type,
@@ -12,7 +13,8 @@ export const ScribbleElement: React.FC<ScribbleProps> = ({
   position,
   color = '#3B82F6',
   // Default blue color
-  rotation = 0
+  rotation = 0,
+  className = ''
 }) => {
   // Position classes
   const positionClasses = {
@@ -36,7 +38,7 @@ export const ScribbleElement: React.FC<ScribbleProps> = ({
         return null;
     }
   };
-  return <div className={`absolute ${positionClasses[position]} z-10 pointer-events-none`} style={{
+  return <div className={`absolute ${positionClasses[position]} z-10 pointer-events-none ${className}`} style={{
     transform: `${rotation ? `rotate(${rotation}deg)` : ''}`
   }}>
       {text ? <div className="whitespace-nowrap text-sm font-original-handwriting" style={{
